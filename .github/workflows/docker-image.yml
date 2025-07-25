@@ -2,8 +2,8 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches: [ main ]   # Change if your default branch is different
-  workflow_dispatch:     # Allows manual triggering from the GitHub UI
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -27,4 +27,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: sohamb16/flaskapp:latest
+          tags: sohamb16/K8S_mini_proj:latest
+
